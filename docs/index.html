@@ -4,11 +4,11 @@
 <head>
 	<meta charset="utf-8">
 	<title>SouthSurrey</title>
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
 	<meta name="description" content="Free Web tutorials">
 	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
 	<meta name="author" content="John Doe">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<!-- Template Basic Images Start -->
 	<meta property="og:title" content="">
@@ -36,6 +36,13 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 	<!-- Custom Browsers Color End -->
+	<!--[if IE 11]>
+    <style>
+		.header .header__search-box .header__search-field {
+			color: #000;
+		}
+	</style>
+  <![endif]-->
 </head>
 
 <body>
@@ -106,7 +113,263 @@
 		<!--MAIN-->
 		<main class="main">
 			<div class="container">
+				<div class="main__title-box">
+					<h2 class="main__title">
+						Contact Form
+					</h2>
+				</div>
+				<form action="#" class="main__filter">
+					<div class="main__tablenav main__tablenav--top">
+						<div class="tablenav__actions">
+							<div class="tablenav__button--light">
+								<label for="input--checkall" class="input-box">
+									<input type="checkbox" name="check" class="input--check" id="input--checkall">Select
+									<span class="input--checkpseudo"><i class="fa fa-check" aria-hidden="true"></i></span>
+								</label>
+							</div>
+							<div class="tablenav__button--light tablenav__button--sort">
+								<i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
+								<select name="select" class="tablenav__sort">
+									<option value="value1">Sort</option>
+									<option value="value2">to top</option>
+									<option value="value3">3</option>
+								</select>
+							</div>
+							<div class="tablenav__button--delete">
+								<i class="fa fa-trash-o" aria-hidden="true"></i>
+								<span>Delete</span>
+							</div>
+						<div class="tablenav__pagination">
+							<p class="paginatiom__num">1-20 of 100 Contacs</p>
+							<button class="pagination__btn pagination__btn--prev disabled">
+								<i class="fa fa-chevron-left" aria-hidden="true"></i>
+							</button>
+							<button class="pagination__btn pagination__btn--next">
+								<i class="fa fa-chevron-right" aria-hidden="true"></i>
+							</button>
+						</div>
+					</div>
+					</div>
+					<table class="main__table">
+						<thead>
+							<tr>
+								<th class="table__column-title"></th>
+								<th class="table__column-title">Date</th>
+								<th class="table__column-title table__column--name">Full Name</th>
+								<th class="table__column-title">Email</th>
+								<th class="table__column-title">Phone</th>
+								<th class="table__column-title">Message</th>
+								<th class="table__column-title">Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th class="table__check-column">
+									<label for="input--check1" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check1">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>
+								</th>
+								<td class="table__ceil--date">Apr 20, 2017</td>
+								<td>John Doe</td>
+								<td>johndoe@gmail.com</td>
+								<td>7789950551</td>
+								<td>Hello I'm interested in listing mls number R2126626 
+is it still available</td>
+								<td>
+									<button class="btn__ugly-blue">Claim</button>
+								</td>
+							</tr>
+							<tr>
+								<th class="table__check-column">
+									<label for="input--check2" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check2">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>									
+								</th>
+								<td class="table__ceil--date">Jan 19, 2016</td>
+								<td>Melad Hana</td>
+								<td>meladalsendy@gmail.com</td>
+								<td>7789950551</td>
+								<td>Hello I'm interested in listing mls number R2126626 
+is it still available</td>
+								<td>
+									<button class="btn__ugly-blue">Claim</button>
+								</td>
+							</tr>
+							<tr>
+								<th class="table__check-column">
+									<label for="input--check3" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check3">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>
+								</th>
+								<td class="table__ceil--date">Dec 19, 2016</td>
+								<td>Mike Finch</td>
+								<td>mfin@gmail.com</td>
+								<td>7789950551</td>
+								<td>Hello I'm interested in listing mls number R2126626 
+is it still available</td>
+								<td>
+									<button class="btn__ugly-blue">Claim</button>
+								</td>
+							</tr>
+							<tr>
+								<th class="table__check-column">
+									<label for="input--check4" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check4">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>
+								</th>
+								<td class="table__ceil--date">Dec 19, 2016</td>
+								<td>Samantha Jade</td>
+								<td>samantha@gmail.com</td>
+								<td>7789950551</td>
+								<td>Lorem Ipsum is simply dummy text of the printing and 
+typesetting industry. Lorem Ipsum has been the 
+industry's standard dummy text ever since the 1500s,</td>
+								<td>
+									<button class="btn__ugly-blue">Claim</button>
+								</td>
+							</tr>
+							<tr>
+								<th class="table__check-column">
+									<label for="input--check5" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check5">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>
+								</th>
+								<td class="table__ceil--date">Apr 20, 2017</td>
+								<td>John Doe</td>
+								<td>johndoe@gmail.com</td>
+								<td>7789950551</td>
+								<td>Hello I'm interested in listing mls number R2126626 
+is it still available</td>
+								<td>
+									<button class="btn__ugly-blue">Claim</button>
+								</td>
+							</tr>
+							<tr>
+								<th class="table__check-column">
+									<label for="input--check6" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check6">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>
+								</th>
+								<td class="table__ceil--date">Jan 19, 2016</td>
+								<td>Melad Hana</td>
+								<td>meladalsendy@gmail.com</td>
+								<td>7789950551</td>
+								<td>Hello I'm interested in listing mls number R2126626 
+is it still available</td>
+								<td>
+									<button class="btn__ugly-blue">Claim</button>
+								</td>
+							</tr>
+							<tr>
+								<th class="table__check-column">
+									<label for="input--check7" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check7">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>
+								</th>
+								<td class="table__ceil--date">Dec 19, 2016</td>
+								<td>Mike Finch</td>
+								<td>mfin@gmail.com</td>
+								<td>7789950551</td>
+								<td>Hello I'm interested in listing mls number R2126626 
+is it still available</td>
+								<td>
+									<button class="btn__ugly-blue">Claim</button>
+								</td>
+							</tr>
+							<tr>
+								<th class="table__check-column">
+									<label for="input--check8" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check8">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>
+								</th>
+								<td class="table__ceil--date">Apr 20, 2017</td>
+								<td>John Doe</td>
+								<td>johndoe@gmail.com</td>
+								<td>7789950551</td>
+								<td>Hello I'm interested in listing mls number R2126626 
+is it still available</td>
+								<td>
+									<button class="btn__ugly-blue">Claim</button>
+								</td>
+							</tr>
+							<tr>
+								<th class="table__check-column">
+									<label for="input--check9" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check9">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>
+								</th>
+								<td class="table__ceil--date">Jan 19, 2016</td>
+								<td>Melad Hana</td>
+								<td>meladalsendy@gmail.com</td>
+								<td>7789950551</td>
+								<td>Hello I'm interested in listing mls number R2126626 
+is it still available</td>
+								<td>
+									<button class="btn__ugly-blue">Claim</button>
+								</td>
+							</tr>
+						</tbody>	
+					</table>
 
+					<div class="main__tablenav main__tablenav--bottom">
+						<div class="tablenav__actions">
+							<div class="tablenav__button--light">
+								<label for="input--checkall" class="input-box">
+									<input type="checkbox" name="check" class="input--check" id="input--checkall">Select
+									<span class="input--checkpseudo"><i class="fa fa-check" aria-hidden="true"></i></span>
+								</label>
+							</div>
+							<div class="tablenav__button--light tablenav__button--sort">
+								<i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
+								<select name="select" class="tablenav__sort">
+									<option value="value1">Sort</option>
+									<option value="value2">to top</option>
+									<option value="value3">3</option>
+								</select>
+							</div>
+							<div class="tablenav__button--delete">
+								<i class="fa fa-trash-o" aria-hidden="true"></i>
+								<span>Delete</span>
+							</div>
+						<div class="tablenav__pagination">
+							<p class="paginatiom__num">1-20 of 100 Contacs</p>
+							<button class="pagination__btn pagination__btn--prev disabled">
+								<i class="fa fa-chevron-left" aria-hidden="true"></i>
+							</button>
+							<button class="pagination__btn pagination__btn--next">
+								<i class="fa fa-chevron-right" aria-hidden="true"></i>
+							</button>
+						</div>
+					</div>
+					</div>
+				</form>
 			</div>
 		</main>
 
@@ -127,7 +390,7 @@
 						<a href="#">Contact Us</a>
 					</li>
 				</ul>
-				<p class="footer__copy">Copyright © SouthSourrey.ca. All Rights Reservered</p>
+				<p class="footer__copy">Copyright © SouthSourrey.ca.  Rights Reservered</p>
 			</div>
 			
 		</footer>
