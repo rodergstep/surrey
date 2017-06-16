@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>SouthSurrey</title>
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="description" content="Free Web tutorials">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="John Doe">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:title" content="">
+	<meta property="og:image" content="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<!-- Template Basic Images End -->
+
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link href="css/vendors/font-awesome.min.css" rel="stylesheet">
+	<link href="css/main.min.css" rel="stylesheet">
+
+	<!-- Custom Browsers Color Start -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<!-- Custom Browsers Color End -->
+	<!--[if IE 11]>
+    <style>
+		.header .header__search-box .header__search-field {
+			color: #000;
+		}
+	</style>
+  <![endif]-->
+</head>
+
+<body>
+	<div class="wrapper">
+		<!--HEADER-->
+		<header class="header">
+			<div class="container">
+				<a href="/" class="header__logo-box">
+					<img class="header__logo" src="img/logo.png" alt="SouthSurrey.ca">
+				</a>
+				<form role="search" class="header__search-box" action="#">
+					<input type="text" class="header__search-field" placeholder="Search Keywords">
+					<button type="submit" class="header__search-button">
+						<i class="fa fa-search" aria-hidden="true"></i>
+					</button>
+				</form>
+				<ul class="header__navbar">
+					<li class="header__settings">
+						<i class="fa fa-cog" aria-hidden="true"></i>
+					</li>
+					<li class="header__notifications">
+						<i class="fa fa-bell-o" aria-hidden="true"></i>
+						<span class="notifications__number">2</span>
+					</li>
+					<li>
+						<a href="#" class="header__account">
+							<img src="img/profile_picture.png" alt="Avatar" class="account__avatar">
+							<span class="account__name">Hamid Khan</span>
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<!--NAVIGATION-->
+		<nav class="nav">
+			<div class="container">
+				<ul class="nav__items">
+					<li class="nav__item active">
+						<a class="nav__item-link" href="index.html">Contact Form</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__item-link" href="requests.html">Showing Requests</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__item-link" href="buildings.html">Buildings</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__item-link" href="realtors.html">Realtors</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__item-link" href="members.html">Members</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__item-link" href="blog,html">Blog</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__item-link" href="schools.html">Schools</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__item-link" href="leads.html">Leads</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!--MAIN-->
+		<main class="main main--requests">
+			<div class="container">
+				<form action="#" class="main__filter">
+					<div class="main__tablenav main__tablenav--top">
+						<div class="tablenav__actions">
+							<div class="tablenav__button--light tablenav__button--checkall">
+								<label for="input--checkall" class="input-box">
+									<input type="checkbox" name="check" class="input--check" id="input--checkall">Select
+									<span class="input--checkpseudo"><i class="fa fa-check" aria-hidden="true"></i></span>
+								</label>
+							</div>
+							<div class="tablenav__button--light">
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+								<span>Email</span>
+							</div>
+							<div class="tablenav__button--light">
+								<i class="fa fa-share" aria-hidden="true"></i>
+								<span>Export</span>
+							</div>
+							<div class="tablenav__button--light tablenav__button--sort">
+								<i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
+								<select name="select" class="tablenav__sort">
+									<option value="value1">Sort</option>
+									<option value="value2">to top</option>
+									<option value="value3">3</option>
+								</select>
+							</div>
+							<div role="search" class="tablenav__search-box">
+								<input type="text" class="tablenav__search-field" placeholder="Search Keywords">
+								<button type="submit" class="tablenav__search-button">
+									<i class="fa fa-search" aria-hidden="true"></i>
+								</button>
+							</div>
+							<div class="tablenav__pagination">
+								<p class="paginatiom__num">1-20 of 100 Contacs</p>
+								<button class="pagination__btn pagination__btn--prev disabled">
+									<i class="fa fa-chevron-left" aria-hidden="true"></i>
+								</button>
+								<button class="pagination__btn pagination__btn--next">
+									<i class="fa fa-chevron-right" aria-hidden="true"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<table class="main__table">
+						<thead>
+							<tr>
+								<th class=""></th>
+								<th class="table__column--name">Name</th>
+								<th class="">Submittion Date</th>
+								<th class="">Email</th>
+								<th class="">Phone</th>
+								<th class="">MLS</th>
+								<th class="">Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th class="table__check-ceil table__check-ceil--active">
+									<label for="input--check1" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check1">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>
+								</th>
+								<td class="table__username">Melad Hana</td>
+								<td>April 8, 2017</td>
+								<td>fname@email.com</td>
+								<td>123-123-1234</td>
+								<td>R12345678</td>
+								<td class="table__status-ceil">
+									<span class="table__status">Claim by</span>
+									<span class="btn btn--agentname">John Doe</span>
+									<div class="table__status-btn">
+										<i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+										<div class="table__status-popup">
+											<a href="#" class="status__radio">
+												<span class="table__status-name">Claim</span>
+											</a>
+											<a href="#" class="status__radio">
+												<span class="table__status-name">Contact</span>
+											</a>
+											<a  href="#" class="status__radio">
+												<span class="table__status-name">Delete</span>
+											</a>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th class="table__check-ceil">
+									<label for="input--check2" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check2">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>									
+								</th>
+								<td class="table__username">John Doe</td>
+								<td>April 8, 2017</td>
+								<td>fname@email.com</td>
+								<td>123-123-1234</td>
+								<td>R12345678</td>
+								<td class="table__status-ceil">
+									<span class="table__status">Claim by</span>
+									<span class="btn btn--agentname">John Doe</span>
+									<i class="fa fa-ellipsis-h table__status-btn" aria-hidden="true"></i>
+								</td>
+							</tr>
+							<tr>
+								<th class="table__check-ceil">
+									<label for="input--check3" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check3">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>
+								</th>
+								<td class="table__username">Jackson Jam </td>
+								<td>April 8, 2017</td>
+								<td>fname@email.com</td>
+								<td>123-123-1234</td>
+								<td>R12345678</td>
+								<td class="table__status-ceil">
+									<span class="table__status">Claim by</span>
+									<span class="btn btn--agentname">John Doe</span>
+									<i class="fa fa-ellipsis-h table__status-btn" aria-hidden="true"></i>
+								</td>
+							</tr>
+							<tr>
+								<th class="table__check-ceil">
+									<label for="input--check4" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check4">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>
+								</th>
+								<td class="table__username">Flix Houdie</td>
+								<td>April 8, 2017</td>
+								<td>fname@email.com</td>
+								<td>123-123-1234</td>
+								<td>R12345678</td>
+								<td class="table__status-ceil">
+									<span class="btn">New</span>
+									<i class="fa fa-ellipsis-h table__status-btn" aria-hidden="true"></i>
+								</td>
+							</tr>
+							<tr>
+								<th class="table__check-ceil">
+									<label for="input--check5" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check5">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>
+								</th>
+								<td class="table__username">Alax Alberto</td>
+								<td>April 8, 2017</td>
+								<td>fname@email.com</td>
+								<td>123-123-1234</td>
+								<td>R12345678</td>
+								<td class="table__status-ceil">
+									<span class="table__status">Claim by</span>
+									<span class="btn btn--agentname">John Doe</span>
+									<i class="fa fa-ellipsis-h table__status-btn" aria-hidden="true"></i>
+								</td>
+							</tr>
+							<tr>
+								<th class="table__check-ceil">
+									<label for="input--check6" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check6">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>
+								</th>
+								<td class="table__username">John Doe</td>
+								<td>April 8, 2017</td>
+								<td>fname@email.com</td>
+								<td>123-123-1234</td>
+								<td>R12345678</td>
+								<td class="table__status-ceil">
+									<span class="table__status">Claim by</span>
+									<span class="btn btn--agentname">John Doe</span>
+									<i class="fa fa-ellipsis-h table__status-btn" aria-hidden="true"></i>
+								</td>
+							</tr>
+							<tr>
+								<th class="table__check-ceil">
+									<label for="input--check7" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check7">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>
+								</th>
+								<td class="table__username">Charlotte Hugo</td>
+								<td>April 8, 2017</td>
+								<td>fname@email.com</td>
+								<td>123-123-1234</td>
+								<td>R12345678</td>
+								<td class="table__status-ceil">
+									<span class="btn">New</span>
+									<span class="btn btn--agentname btn--agentname--disabled">John Doe</span>
+									<i class="fa fa-ellipsis-h table__status-btn" aria-hidden="true"></i>
+								</td>
+							</tr>
+							<tr>
+								<th class="table__check-ceil">
+									<label for="input--check8" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check8">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>
+								</th>
+								<td class="table__username">Melad Hana</td>
+								<td>April 8, 2017</td>
+								<td>fname@email.com</td>
+								<td>123-123-1234</td>
+								<td>R12345678</td>
+								<td class="table__status-ceil">
+									<span class="table__status">New</span>
+									<span class="btn btn--agentname btn--agentname--disabled">John Doe</span>
+									<i class="fa fa-ellipsis-h table__status-btn" aria-hidden="true"></i>
+								</td>
+							</tr>
+							<tr>
+								<th class="table__check-ceil">
+									<label for="input--check9" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check9">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>
+								</th>
+								<td class="table__username">Oliver Liam</td>
+								<td>April 8, 2017</td>
+								<td>fname@email.com</td>
+								<td>123-123-1234</td>
+								<td>R12345678</td>
+								<td class="table__status-ceil">
+									<span class="table__status">Claim by</span>
+									<span class="btn btn--agentname btn--agentname--disabled">John Doe</span>
+									<i class="fa fa-ellipsis-h table__status-btn" aria-hidden="true"></i>
+								</td>
+							</tr>
+							<tr>
+								<th class="table__check-ceil">
+									<label for="input--check10" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check10">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>
+								</th>
+								<td class="table__username">Melad Hana</td>
+								<td>April 8, 2017</td>
+								<td>fname@email.com</td>
+								<td>123-123-1234</td>
+								<td>R12345678</td>
+								<td class="table__status-ceil">
+									<span class="table__status">New</span>
+									<span class="btn btn--agentname btn--agentname--disabled">John Doe</span>
+									<i class="fa fa-ellipsis-h table__status-btn" aria-hidden="true"></i>
+								</td>
+							</tr>
+							<tr>
+								<th class="table__check-ceil">
+									<label for="input--check11" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check11">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>
+								</th>
+								<td class="table__username">William H.</td>
+								<td>April 8, 2017</td>
+								<td>fname@email.com</td>
+								<td>123-123-1234</td>
+								<td>R12345678</td>
+								<td class="table__status-ceil">
+									<span class="table__status">Claim by</span>
+									<span class="btn btn--agentname">John Doe</span>
+									<i class="fa fa-ellipsis-h table__status-btn" aria-hidden="true"></i>
+								</td>
+							</tr>
+							<tr>
+								<th class="table__check-ceil">
+									<label for="input--check12" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check12">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>
+								</th>
+								<td class="table__username">Elsa Doe</td>
+								<td>April 8, 2017</td>
+								<td>fname@email.com</td>
+								<td>123-123-1234</td>
+								<td>R12345678</td>
+								<td class="table__status-ceil">
+									<span class="table__status">New</span>
+									<span class="btn btn--agentname btn--agentname--disabled">John Doe</span>
+									<i class="fa fa-ellipsis-h table__status-btn" aria-hidden="true"></i>
+								</td>
+							</tr>
+							<tr>
+								<th class="table__check-ceil">
+									<label for="input--check13" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check13">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>
+								</th>
+								<td class="table__username">Melad Hana</td>
+								<td>April 8, 2017</td>
+								<td>fname@email.com</td>
+								<td>123-123-1234</td>
+								<td>R12345678</td>
+								<td class="table__status-ceil">
+									<span class="table__status">Claim by</span>
+									<span class="btn btn--agentname btn--agentname--disabled">John Doe</span>
+									<i class="fa fa-ellipsis-h table__status-btn" aria-hidden="true"></i>
+								</td>
+							</tr>
+							<tr>
+								<th class="table__check-ceil">
+									<label for="input--check14" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check14">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>
+								</th>
+								<td class="table__username">Harper Jr.</td>
+								<td>April 8, 2017</td>
+								<td>fname@email.com</td>
+								<td>123-123-1234</td>
+								<td>R12345678</td>
+								<td class="table__status-ceil">
+									<span class="table__status">Claim by</span>
+									<span class="btn btn--agentname btn--agentname--disabled">John Doe</span>
+									<i class="fa fa-ellipsis-h table__status-btn" aria-hidden="true"></i>
+								</td>
+							</tr>
+							<tr>
+								<th class="table__check-ceil">
+									<label for="input--check15" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check15">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>
+								</th>
+								<td class="table__username">Melad Hana</td>
+								<td>April 8, 2017</td>
+								<td>fname@email.com</td>
+								<td>123-123-1234</td>
+								<td>R12345678</td>
+								<td class="table__status-ceil">
+									<span class="table__status">Claim by</span>
+									<span class="btn btn--agentname btn--agentname--disabled">John Doe</span>
+									<i class="fa fa-ellipsis-h table__status-btn" aria-hidden="true"></i>
+								</td>
+							</tr>
+						</tbody>	
+					</table>
+
+					<div class="main__tablenav main__tablenav--bottom">
+						<div class="tablenav__actions">
+							<div class="tablenav__button--light tablenav__button--checkall">
+								<label for="input--checkall" class="input-box">
+									<input type="checkbox" name="check" class="input--check" id="input--checkall">Select
+									<span class="input--checkpseudo"><i class="fa fa-check" aria-hidden="true"></i></span>
+								</label>
+							</div>
+							<div class="tablenav__button--light">
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+								<span>Email</span>
+							</div>
+							<div class="tablenav__button--light">
+								<i class="fa fa-share" aria-hidden="true"></i>
+								<span>Export</span>
+							</div>
+							<div class="tablenav__button--light tablenav__button--sort">
+								<i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
+								<select name="select" class="tablenav__sort">
+									<option value="value1">Sort</option>
+									<option value="value2">to top</option>
+									<option value="value3">3</option>
+								</select>
+							</div>
+							<div class="tablenav__pagination">
+								<p class="paginatiom__num">1-20 of 100 Contacs</p>
+								<button class="pagination__btn pagination__btn--prev disabled">
+									<i class="fa fa-chevron-left" aria-hidden="true"></i>
+								</button>
+								<button class="pagination__btn pagination__btn--next">
+									<i class="fa fa-chevron-right" aria-hidden="true"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</main>
+
+		
+
+				<!--FOOTER-->
+		<footer class="footer">
+			<div class="container">
+				<ul class="footer__nav">    
+					<li class="footer__link">
+						<a href="#">Terms and Conditions</a>
+					</li>
+					<li class="footer__link">
+						<a href="#">Privacy Policy</a>
+					</li>
+					<li class="footer__link">
+						<a href="#">FAQ</a>
+					</li>
+					<li class="footer__link">
+						<a href="#">Contact Us</a>
+					</li>
+				</ul>
+				<p class="footer__copy">Copyright © SouthSourrey.ca.  Rights Reservered</p>
+			</div>
+			
+		</footer>
+	</div>
+
+
+	<!-- Loading JS files -->
+	<script src="js/vendors/jquery-1.12.0.min.js"></script>
+	<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
