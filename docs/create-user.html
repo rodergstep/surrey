@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>SouthSurrey</title>
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="description" content="Free Web tutorials">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="John Doe">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:title" content="">
+	<meta property="og:image" content="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<!-- Template Basic Images End -->
+
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link href="css/vendors/font-awesome.min.css" rel="stylesheet">
+	<link href="css/vendors/magnific-popup.min.css" rel="stylesheet">
+	
+	<link href="css/main.min.css" rel="stylesheet">
+
+	<!-- Custom Browsers Color Start -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<!-- Custom Browsers Color End -->
+	<!--[if IE 11]>
+    <style>
+		.header .header__search-box .header__search-field {
+			color: #000;
+		}
+	</style>
+  <![endif]-->
+</head>
+
+<body>
+	<div class="wrapper">
+		<!--HEADER-->
+		<header class="header">
+			<div class="container">
+				<a href="index.html" class="header__logo-box">
+					<img class="header__logo" src="img/logo.png" alt="SouthSurrey.ca">
+				</a>
+				<form role="search" class="header__search-box" action="#">
+					<input type="text" class="header__search-field" placeholder="Search Keywords">
+					<button type="submit" class="header__search-button">
+						<i class="fa fa-search" aria-hidden="true"></i>
+					</button>
+				</form>
+				<ul class="header__navbar">
+					<li class="header__settings">
+						<i class="fa fa-cog" aria-hidden="true"></i>
+					</li>
+					<li class="header__notifications">
+						<i class="fa fa-bell-o" aria-hidden="true"></i>
+						<span class="notifications__number">2</span>
+					</li>
+					<li>
+						<a href="#" class="header__account">
+							<img src="img/profile_picture.png" alt="Avatar" class="account__avatar">
+							<span class="account__name">Hamid Khan</span>
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<!--NAVIGATION-->
+		<nav class="nav">
+			<div class="container">
+				<ul class="nav__items">
+					<li class="nav__item active">
+						<a class="nav__item-link" href="index.html">Contact Form</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__item-link" href="requests.html">Showing Requests</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__item-link" href="buildings.html">Buildings</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__item-link" href="realtors.html">Realtors</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__item-link" href="members.html">Members</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__item-link" href="blog,html">Blog</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__item-link" href="schools.html">Schools</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__item-link" href="leads.html">Leads</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!--MAIN-->
+		<main class="main main--create">
+			<div class="container">
+				<div class="main__title-box">
+					<h2 class="main__title">
+						Create New User
+					</h2>
+				</div>
+
+				<form action="#" class="create-box">
+                    <div class="create_input-data">
+                        <div class="create__inputs">
+                            <label for="">
+                                <span class="create__input-title">First Name</span>
+                                <input type="text" id="create__input-name">
+                            </label>
+                            <label for="">
+                                <span class="create__input-title">Last Name</span>
+                                <input type="text" id="create__input-name">
+                            </label>
+                            <label for="">
+                                <span class="create__input-title">Email</span>
+                                <input type="text" id="create__input-name">
+                            </label>
+                            <label for="">
+                                <span class="create__input-title">Contact Number</span>
+                                <input type="text" id="create__input-name">
+                            </label>
+                            <label for="">
+                                <span class="create__input-title">Password</span>
+                                <input type="text" id="create__input-name">
+                            </label>
+                            <label for="">
+                                <span class="create__input-title">Retype Password</span>
+                                <input type="text" id="create__input-name">
+                            </label>
+                        </div>
+
+                        <div class="create__profile-picture">
+                            <div class="file-upload">
+                                <button class="file-upload-btn btn--square" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+
+                                <div class="image-upload-wrap">
+                                    <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                                    <div class="drag-text">
+                                        <h5>Uplpad <br> or <br> Drag</h5>
+                                    </div>
+                                </div>
+                                <div class="file-upload-content">
+                                    <img class="file-upload-image" src="#" alt="your image" />
+                                    <div class="image-title-wrap">
+                                    <button type="button" onclick="removeUpload()" class="remove-image btn--square">Remove <span class="image-title">Uploaded Image</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="create__buttons">
+                        <button class="btn--square btn--blue">Create</button>
+                        <button class="btn--square btn--grey">Cancel</button>
+                    </div>
+				</form>
+			</div>
+		</main>
+
+				<!--FOOTER-->
+		<footer class="footer">
+			<div class="container">
+				<ul class="footer__nav">    
+					<li class="footer__link">
+						<a href="#">Terms and Conditions</a>
+					</li>
+					<li class="footer__link">
+						<a href="#">Privacy Policy</a>
+					</li>
+					<li class="footer__link">
+						<a href="#">FAQ</a>
+					</li>
+					<li class="footer__link">
+						<a href="#">Contact Us</a>
+					</li>
+				</ul>
+				<p class="footer__copy">Copyright © SouthSourrey.ca.  Rights Reservered</p>
+			</div>
+			
+		</footer>
+	</div>
+
+
+	<!-- Loading JS files --> 
+	<script src="js/vendors/jquery-1.12.0.min.js"></script>
+	<script src="js/vendors/magnific-popup.js"></script>
+	<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
