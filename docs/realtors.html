@@ -181,10 +181,8 @@
 								<td>Billy Cooter</td>
 								<td>billy@superwebhost.com</td>
 								<td>
-									<button class="btn btn--ugly-blue">
-										<a href="edit-user.html">Edit</a>
-									</button>
-									<button class="btn btn--water-blue">Saved Listings</button>
+									<a role="button" href="edit-user.html" class="btn btn--ugly-blue">Edit</a>
+									<a role="button" href="#modal-saved-listings" class="popup-with-zoom-anim btn btn--water-blue">Saved Listings</a>
 								</td>
 							</tr>
 							<!--row-->
@@ -200,10 +198,8 @@
 								<td>Deseray Cooter</td>
 								<td>des@socialbydes.com</td>
 								<td>
-									<button class="btn btn--ugly-blue">
-										<a href="edit-user.html">Edit</a>
-									</button>
-									<button class="btn btn--water-blue">Saved Listings</button>
+									<a role="button" href="edit-user.html" class="btn btn--ugly-blue">Edit</a>
+									<a role="button" href="#modal-saved-listings" class="popup-with-zoom-anim btn btn--water-blue">Saved Listings</a>
 								</td>
 							</tr>
 							<!--row-->
@@ -219,10 +215,8 @@
 								<td>Hamid Khan</td>
 								<td>hakhan.designer@gmail.com</td>
 								<td>
-									<button class="btn btn--ugly-blue">
-										<a href="edit-user.html">Edit</a>
-									</button>
-									<button class="btn btn--water-blue">Saved Listings</button>
+									<a role="button" href="edit-user.html" class="btn btn--ugly-blue">Edit</a>
+									<a role="button" href="#modal-saved-listings" class="popup-with-zoom-anim btn btn--water-blue">Saved Listings</a>
 								</td>
 							</tr>
 							<!--row-->
@@ -238,10 +232,8 @@
 								<td>Stewart Peddemors</td>
 								<td>stewart@stewartpeddemors.com</td>
 								<td>
-									<button class="btn btn--ugly-blue">
-										<a href="edit-user.html">Edit</a>
-									</button>
-									<button class="btn btn--water-blue">Saved Listings</button>
+									<a role="button" href="edit-user.html" class="btn btn--ugly-blue">Edit</a>
+									<a role="button" href="#modal-saved-listings" class="popup-with-zoom-anim btn btn--water-blue">Saved Listings</a>
 								</td>
 							</tr>
 							<!--row-->
@@ -257,10 +249,8 @@
 								<td>Victor Klimov</td>
 								<td>victor@php4hire.com</td>
 								<td>
-									<button class="btn btn--ugly-blue">
-										<a href="edit-user.html">Edit</a>
-									</button>
-									<button class="btn btn--water-blue">Saved Listings</button>
+									<a role="button" href="edit-user.html" class="btn btn--ugly-blue">Edit</a>
+									<a role="button" href="#modal-saved-listings" class="popup-with-zoom-anim btn btn--water-blue">Saved Listings</a>
 								</td>
 							</tr>
 							<!--row-->
@@ -276,10 +266,8 @@
 								<td>Derek Thornton</td>
 								<td>derek@derekthornton.com</td>
 								<td>
-									<button class="btn btn--ugly-blue">
-										<a href="edit-user.html">Edit</a>
-									</button>
-									<button class="btn btn--water-blue">Saved Listings</button>
+									<a role="button" href="edit-user.html" class="btn btn--ugly-blue">Edit</a>
+									<a role="button" href="#modal-saved-listings" class="popup-with-zoom-anim btn btn--water-blue">Saved Listings</a>
 								</td>
 							</tr>
 						</tbody>	
@@ -318,6 +306,57 @@
 					</div>
 					</div>
 				</form>
+
+				<div id="modal-saved-listings" class="zoom-anim-dialog mfp-hide">
+					<h3 class="modal-sl__title">Listings saved by Hamid Khan</h3>
+					<ul class="modal-sl__address-box">
+						<li class="modal-sl__address-line">
+							<span class="modal__sl-address">
+								ADDRESS
+							</span>
+							<div class="modal__sl-buttons">
+								<a role="button" href="#" class="btn btn--ugly-blue">View</a>
+								<a role="button" href="#" class="btn btn--light-grey">Delete</a>
+							</div>
+						</li>
+						<li class="modal-sl__address-line">
+							<span class="modal__sl-address">
+								14563 32 AVENUE, $1,798,000
+							</span>
+							<div class="modal__sl-buttons">
+								<a role="button" href="#" class="btn btn--ugly-blue">View</a>
+								<a role="button" href="#" class="btn btn--light-grey">Delete</a>
+							</div>
+						</li>
+						<li class="modal-sl__address-line">
+							<span class="modal__sl-address">
+								3286 CANTERBURY DRIVE, $1,688,000
+							</span>
+							<div class="modal__sl-buttons">
+								<a role="button" href="#" class="btn btn--ugly-blue">View</a>
+								<a role="button" href="#" class="btn btn--light-grey">Delete</a>
+							</div>
+						</li>
+						<li class="modal-sl__address-line">
+							<span class="modal__sl-address">
+								14563 32 AVENUE, $1,798,000
+							</span>
+							<div class="modal__sl-buttons">
+								<a role="button" href="#" class="btn btn--ugly-blue">View</a>
+								<a role="button" href="#" class="btn btn--light-grey">Delete</a>
+							</div>
+						</li>
+						<li class="modal-sl__address-line">
+							<span class="modal__sl-address">
+								3286 CANTERBURY DRIVE, $1,688,000
+							</span>
+							<div class="modal__sl-buttons">
+								<a role="button" href="#" class="btn btn--ugly-blue">View</a>
+								<a role="button" href="#" class="btn btn--light-grey">Delete</a>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</main>
 
@@ -347,7 +386,7 @@
 
 	<!-- Loading JS files --> 
 	<script src="js/vendors/jquery-1.12.0.min.js"></script>
-	<script src="js/vendors/magnific-popup.js"></script>
+	<script src="js/vendors/magnific-popup.min.js"></script>
 	<script src="js/main.min.js"></script>
 
 </body>
