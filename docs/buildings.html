@@ -100,7 +100,7 @@
 						<a class="nav__item-link" href="members.html">Members</a>
 					</li>
 					<li class="nav__item">
-						<a class="nav__item-link" href="blog,html">Blog</a>
+						<a class="nav__item-link" href="blog.html">Blog</a>
 					</li>
 					<li class="nav__item">
 						<a class="nav__item-link" href="schools.html">Schools</a>
@@ -113,24 +113,24 @@
 		</nav>
 
 		<!--MAIN-->
-		<main class="main main--buildings">
+		<main class="main main--bl">
 			<div class="container">
 				<!--Building List Search-->
-				<form action="#" class="buildings__search-box">
-					<div class="buildings__search-name">
+				<form action="#" class="bl__search-box">
+					<div class="bl__field-1">
 						<label for="bld__input--name">Name</label>
 						<input type="text" id="bld__input--name" placeholder="Search by Building Name">
 					</div>
-					<div class="buildings__search-city">
+					<div class="bl__field-2">
 						<label for="bld__input--city">City</label>
 						<input type="text" id="bld__input--name" placeholder="Search by City">
 					</div>
-					<div class="buildings__search-strname">
+					<div class="bl__field-3">
 						<label for="bld__input--strname">Street Name</label>
 						<input type="text" id="bld__input--name" placeholder="Search by Street">
 					</div>
-					<div class="buildings__search-btn">
-						<button class="buildings__search-submit">
+					<div class="bl__search-btn">
+						<button class="bl__search-submit">
 							<i class="fa fa-search" aria-hidden="true"></i>
 							<span>SEARCH</span>
 						</button>
@@ -156,7 +156,7 @@
 							</div>
 							<!--table pagination-->
 						<div class="tablenav__pagination">
-							<p class="paginatiom__num">1-20 of 100 Contacs</p>
+							<p class="paginatiom__num">1-20 of 100 Buildings</p>
 							<button class="pagination__btn pagination__btn--prev disabled">
 								<i class="fa fa-chevron-left" aria-hidden="true"></i>
 							</button>
@@ -202,7 +202,7 @@
 									<div class="table__address-box">
 										<span>1521 GEORGE STREET</span>
 									</div>
-									<i class="fa fa-plus-circle" aria-hidden="true"></i>
+									<a href="#" role="button">+</a>
 								</td>
 								<td></td>
 								<td></td>
@@ -237,7 +237,7 @@
 									<div class="table__address-box">
 										<span>46160 PRINCESS AVENUE</span>
 									</div>
-									<i class="fa fa-plus-circle" aria-hidden="true"></i>
+									<a href="#" role="button">+</a>
 								</td>
 								<td></td>
 								<td></td>
@@ -267,7 +267,7 @@
 										<span>32638 7TH AVENUE</span><br>
 										<span>32638 7TH AVENUE</span>
 									</div>
-									<i class="fa fa-plus-circle" aria-hidden="true"></i>
+									<a href="#" role="button">+</a>
 								</td>
 								<td></td>
 								<td></td>
@@ -296,7 +296,7 @@
 									<div class="table__address-box">
 										<span>46294 FIRST AVENUE</span>
 									</div>
-									<i class="fa fa-plus-circle" aria-hidden="true"></i>
+									<a href="#" role="button">+</a>
 								</td>
 								<td></td>
 								<td></td>
@@ -325,7 +325,7 @@
 									<div class="table__address-box">
 										<span>46294 FIRST AVENUE</span>
 									</div>
-									<i class="fa fa-plus-circle" aria-hidden="true"></i>
+									<a href="#" role="button">+</a>
 								</td>
 								<td></td>
 								<td></td>
@@ -354,7 +354,7 @@
 									<div class="table__address-box">
 										<span>270 1ST STRET</span>
 									</div>
-									<i class="fa fa-plus-circle" aria-hidden="true"></i>
+									<a href="#" role="button">+</a>
 								</td>
 								<td></td>
 								<td></td>
@@ -383,7 +383,7 @@
 									<div class="table__address-box">
 										<span>8400 ASHLEIGH MCIVOR DRIVE</span>
 									</div>
-									<i class="fa fa-plus-circle" aria-hidden="true"></i>
+									<a href="#" role="button">+</a>
 								</td>
 								<td></td>
 								<td></td>
@@ -412,7 +412,7 @@
 									<div class="table__address-box">
 										<span>4788 57 STREET</span>
 									</div>
-									<i class="fa fa-plus-circle" aria-hidden="true"></i>
+									<a href="#" role="button">+</a>
 								</td>
 								<td></td>
 								<td></td>
@@ -441,7 +441,7 @@
 									<div class="table__address-box">
 										<span>4588 DUBBERT STREET</span>
 									</div>
-									<i class="fa fa-plus-circle" aria-hidden="true"></i>
+									<a href="#" role="button">+</a>
 								</td>
 								<td></td>
 								<td></td>
@@ -470,7 +470,7 @@
 									<div class="table__address-box">
 										<span>9680 ALEXANDRA ROAD</span>
 									</div>
-									<i class="fa fa-plus-circle" aria-hidden="true"></i>
+									<a href="#" role="button">+</a>
 								</td>
 								<td></td>
 								<td></td>
@@ -485,11 +485,11 @@
 					</table>
 					
 					<!-- TABLE BOTTOM NAVIGATION-->
-					<div class="main__tablenav main__tablenav--bottom">
+					<div class="main__tablenav main__tablenav--top">
 						<div class="tablenav__actions">
-							<div class="tablenav__button--light">
-								<label for="input--checkall" class="input-box">
-									<input type="checkbox" name="check" class="input--check" id="input--checkall">Select
+							<div class="tablenav__button--light tablenav__button--checkall">
+								<label for="input--checkall--bottom" class="input-box">
+									<input type="checkbox" name="check" class="input--check" id="input--checkall--bottom">Select
 									<span class="input--checkpseudo"><i class="fa fa-check" aria-hidden="true"></i></span>
 								</label>
 							</div>
@@ -501,8 +501,9 @@
 									<option value="value3">3</option>
 								</select>
 							</div>
+							<!--table pagination-->
 						<div class="tablenav__pagination">
-							<p class="paginatiom__num">1-20 of 100 Contacs</p>
+							<p class="paginatiom__num">1-20 of 100 Buildings</p>
 							<button class="pagination__btn pagination__btn--prev disabled">
 								<i class="fa fa-chevron-left" aria-hidden="true"></i>
 							</button>

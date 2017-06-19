@@ -112,14 +112,41 @@
 			</div>
 		</nav>
 
+				<!--THIS PAGE USES TEMPLATE OF BUILDINGS PAGE-->
 		<!--MAIN-->
-		<main class="main main--realtors">
+		<main class="main main--blog main--bl">
 			<div class="container">
-				<!--<div class="main__title-box">
-					<h2 class="main__title">
-						Realtors List
-					</h2>
-				</div>-->
+				<!--Blogs-->
+				<form action="#" class="bl__search-box">
+					<div class="bl__field-1">
+						<label for="bld__input--name">By Keywords</label>
+						<input type="text" id="bld__input--name" placeholder="Search by keywords">
+					</div>
+					<div class="bl__field-2">
+						<label for="bl__input--status">By Status</label>
+						<select name="status" id="bl__input--status">
+							<option>Search by Status</option>	
+							<option value="1">Status 1</option>
+							<option value="2">Status 2</option>
+							<option value="3">Status 3</option>
+						</select>
+					</div>
+					<div class="bl__field-3">
+						<label for="bl__input--date">By Date</label>
+						<select name="status" id="bl__input--date">
+							<option>Search by Date</option>	
+							<option value="1">Date 1</option>
+							<option value="2">Date 2</option>
+							<option value="3">Date 3</option>
+						</select>
+					</div>
+					<div class="bl__search-btn">
+						<button class="bl__search-submit">
+							<i class="fa fa-search" aria-hidden="true"></i>
+							<span>SEARCH</span>
+						</button>
+					</div>
+				</form>
 				<form action="#" class="main__filter">
 					<!-- TABLE TOP NAVIGATION-->
 					<div class="main__tablenav main__tablenav--top">
@@ -138,32 +165,35 @@
 									<option value="value3">3</option>
 								</select>
 							</div>
+							<!--add button-->
 							<div role="button" class="tablenav__button--add">
 								<i class="fa fa-plus" aria-hidden="true"></i>
-								<a href="create-user.html">Add New Realtor</a>
+								<a href="create-user.html">Create New Blog</a>
 							</div>
 							<!--table pagination-->
 						<div class="tablenav__pagination">
-							<p class="paginatiom__num">1-6 of 6 Contacs</p>
+							<p class="paginatiom__num">1-10 of 100 Blogs</p>
 							<button class="pagination__btn pagination__btn--prev disabled">
 								<i class="fa fa-chevron-left" aria-hidden="true"></i>
 							</button>
-							<button class="pagination__btn pagination__btn--next disabled">
+							<button class="pagination__btn pagination__btn--next">
 								<i class="fa fa-chevron-right" aria-hidden="true"></i>
 							</button>
 						</div>
 					</div>
 					</div>
-					<!--TABLE-->
+					<!--Table-->
 					<table class="main__table">
 						<!--thead-->
 						<thead>
 							<!--row-->
 							<tr>
-								<th class="table__column--ckecking"></th>
-								<th class="">Name</th>
-								<th class="">Email</th>
-								<th class="table__buttons-cell"></th>
+								<th class=""></th>
+								<th class="table__column--">Created at</th>
+								<th class="">Title</th>
+								<th class="">Status</th>
+								<th class="">Publish at</th>
+								<th class=""></th>
 							</tr>
 						</thead>
 						<!--tbody-->
@@ -178,11 +208,26 @@
 										</span>
 									</label>
 								</th>
-								<td>Billy Cooter</td>
-								<td>billy@superwebhost.com</td>
+								<td>1</td>
 								<td>
-									<a role="button" href="edit-user.html" class="btn btn--ugly-blue">Edit</a>
-									<a role="button" href="#modal-saved-listings" class="popup-with-zoom-anim btn btn--water-blue">Saved Listings</a>
+									<span class="table__city-cell">White Rock</span>								</span>
+								</td>
+								<td>
+									<div class="table__address-box">
+										<span>1521 GEORGE STREET</span>
+									</div>
+								</td>
+								<td></td>
+								<td>
+									<button class="btn btn--ugly-blue">
+										<a href="#">Edit</a>
+									</button>
+									<button class="btn btn--water-blue">
+										<a href="#">Preview</a>
+									</button>
+									<button class="btn btn--piss-yellow">
+										<a href="#">Photo(0)</a>
+									</button>
 								</td>
 							</tr>
 							<!--row-->
@@ -195,11 +240,20 @@
 										</span>
 									</label>									
 								</th>
-								<td>Deseray Cooter</td>
-								<td>des@socialbydes.com</td>
+								<td>2</td>
 								<td>
-									<a role="button" href="edit-user.html" class="btn btn--ugly-blue">Edit</a>
-									<a role="button" href="#modal-saved-listings" class="popup-with-zoom-anim btn btn--water-blue">Saved Listings</a>
+									<span class="table__city-cell">Chilliwack</span>
+								</td>
+								<td>
+									<div class="table__address-box">
+										<span>46160 PRINCESS AVENUE</span>
+									</div>
+								</td>
+								<td></td>								
+								<td>
+									<button class="btn btn--ugly-blue">Edit</button>
+									<button class="btn btn--water-blue">Preview</button>
+									<button class="btn btn--piss-yellow">Photo(0)</button>
 								</td>
 							</tr>
 							<!--row-->
@@ -212,11 +266,21 @@
 										</span>
 									</label>
 								</th>
-								<td>Hamid Khan</td>
-								<td>hakhan.designer@gmail.com</td>
+								<td>3</td>
 								<td>
-									<a role="button" href="edit-user.html" class="btn btn--ugly-blue">Edit</a>
-									<a role="button" href="#modal-saved-listings" class="popup-with-zoom-anim btn btn--water-blue">Saved Listings</a>
+									<span class="table__city-cell">Mission</span>
+								</td>
+								<td>
+									<div class="table__address-box">
+										<span>32638 7TH AVENUE</span><br>
+										<span>32638 7TH AVENUE</span>
+									</div>
+								</td>
+								<td></td>	
+								<td>
+									<button class="btn btn--ugly-blue">Edit</button>
+									<button class="btn btn--water-blue">Preview</button>
+									<button class="btn btn--piss-yellow">Photo(0)</button>
 								</td>
 							</tr>
 							<!--row-->
@@ -229,11 +293,20 @@
 										</span>
 									</label>
 								</th>
-								<td>Stewart Peddemors</td>
-								<td>stewart@stewartpeddemors.com</td>
+								<td>4</td>
 								<td>
-									<a role="button" href="edit-user.html" class="btn btn--ugly-blue">Edit</a>
-									<a role="button" href="#modal-saved-listings" class="popup-with-zoom-anim btn btn--water-blue">Saved Listings</a>
+									<span class="table__city-cell">Chilliwack</span>
+								</td>
+								<td>
+									<div class="table__address-box">
+										<span>46294 FIRST AVENUE</span>
+									</div>
+								</td>
+								<td></td>			
+								<td>
+									<button class="btn btn--ugly-blue">Edit</button>
+									<button class="btn btn--water-blue">Preview</button>
+									<button class="btn btn--piss-yellow">Photo(0)</button>
 								</td>
 							</tr>
 							<!--row-->
@@ -246,11 +319,20 @@
 										</span>
 									</label>
 								</th>
-								<td>Victor Klimov</td>
-								<td>victor@php4hire.com</td>
+								<td>5</td>
 								<td>
-									<a role="button" href="edit-user.html" class="btn btn--ugly-blue">Edit</a>
-									<a role="button" href="#modal-saved-listings" class="popup-with-zoom-anim btn btn--water-blue">Saved Listings</a>
+									<span class="table__city-cell">Surrey</span>
+								</td>
+								<td>
+									<div class="table__address-box">
+										<span>46294 FIRST AVENUE</span>
+									</div>
+								</td>
+								<td></td>	
+								<td>
+									<button class="btn btn--ugly-blue">Edit</button>
+									<button class="btn btn--water-blue">Preview</button>
+									<button class="btn btn--piss-yellow">Photo(0)</button>
 								</td>
 							</tr>
 							<!--row-->
@@ -263,22 +345,135 @@
 										</span>
 									</label>
 								</th>
-								<td>Derek Thornton</td>
-								<td>derek@derekthornton.com</td>
+								<td>6</td>
 								<td>
-									<a role="button" href="edit-user.html" class="btn btn--ugly-blue">Edit</a>
-									<a role="button" href="#modal-saved-listings" class="popup-with-zoom-anim btn btn--water-blue">Saved Listings</a>
+									<span class="table__city-cell">Whistler</span>									
+								</td>
+								<td>
+									<div class="table__address-box">
+										<span>270 1ST STRET</span>
+									</div>
+								</td>
+								<td></td>	
+								<td>
+									<button class="btn btn--ugly-blue">Edit</button>
+									<button class="btn btn--water-blue">Preview</button>
+									<button class="btn btn--piss-yellow">Photo(0)</button>
+								</td>
+							</tr>
+							<!--row-->
+							<tr>
+								<th class="table__check-cell">
+									<label for="input--check7" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check7">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>
+								</th>
+								<td>7</td>
+								<td>
+									<span class="table__city-cell">Whistler</span>
+								</td>
+								<td>
+									<div class="table__address-box">
+										<span>8400 ASHLEIGH MCIVOR DRIVE</span>
+									</div>
+								</td>
+								<td></td>	
+								<td>
+									<button class="btn btn--ugly-blue">Edit</button>
+									<button class="btn btn--water-blue">Preview</button>
+									<button class="btn btn--piss-yellow">Photo(0)</button>
+								</td>
+							</tr>
+							<!--row-->
+							<tr>
+								<th class="table__check-cell">
+									<label for="input--check8" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check8">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>
+								</th>
+								<td>8</td>
+								<td>
+									<span class="table__city-cell">Whistler</span>
+								</td>
+								<td>
+									<div class="table__address-box">
+										<span>4788 57 STREET</span>
+									</div>
+								</td>
+								<td></td>	
+								<td>
+									<button class="btn btn--ugly-blue">Edit</button>
+									<button class="btn btn--water-blue">Preview</button>
+									<button class="btn btn--piss-yellow">Photo(0)</button>
+								</td>
+							</tr>
+							<!--row-->
+							<tr>
+								<th class="table__check-cell">
+									<label for="input--check9" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check9">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>
+								</th>
+								<td>9</td>
+								<td>
+									<span class="table__city-cell">Richmond</span>
+								</td>
+								<td>
+									<div class="table__address-box">
+										<span>4588 DUBBERT STREET</span>
+									</div>
+								</td>
+								<td></td>	
+								<td>
+									<button class="btn btn--ugly-blue">Edit</button>
+									<button class="btn btn--water-blue">Preview</button>
+									<button class="btn btn--piss-yellow">Photo(0)</button>
+								</td>
+							</tr>
+							<!--row-->
+							<tr>
+								<th class="table__check-cell">
+									<label for="input--check10" class="input-box">
+										<input type="checkbox" name="check" class="input--check" id="input--check10">
+										<span class="input--checkpseudo">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</span>
+									</label>
+								</th>
+								<td>10</td>
+								<td>
+									<span class="table__city-cell">Richmond</span>
+								</td>
+								<td>
+									<div class="table__address-box">
+										<span>9680 ALEXANDRA ROAD</span>
+									</div>
+								</td>
+								<td></td>	
+								<td>
+									<button class="btn btn--ugly-blue">Edit</button>
+									<button class="btn btn--water-blue">Preview</button>
+									<button class="btn btn--piss-yellow">Photo(0)</button>
 								</td>
 							</tr>
 						</tbody>	
 					</table>
-
+					
 					<!-- TABLE BOTTOM NAVIGATION-->
-					<div class="main__tablenav main__tablenav--bottom">
+					<div class="main__tablenav main__tablenav--top">
 						<div class="tablenav__actions">
-							<div class="tablenav__button--light">
-								<label for="input--checkall" class="input-box">
-									<input type="checkbox" name="check" class="input--check" id="input--checkall">Select
+							<div class="tablenav__button--light tablenav__button--checkall">
+								<label for="input--checkall--bottom" class="input-box">
+									<input type="checkbox" name="check" class="input--check" id="input--checkall--bottom">Select
 									<span class="input--checkpseudo"><i class="fa fa-check" aria-hidden="true"></i></span>
 								</label>
 							</div>
@@ -290,74 +485,24 @@
 									<option value="value3">3</option>
 								</select>
 							</div>
+							<!--add button-->
 							<div role="button" class="tablenav__button--add">
 								<i class="fa fa-plus" aria-hidden="true"></i>
-								<a href="create-user.html">Add New Realtor</a>
-							</div>	
+								<a href="create-user.html">Create New Blog</a>
+							</div>
+							<!--table pagination-->
 						<div class="tablenav__pagination">
-							<p class="paginatiom__num">1-6 of 6 Contacs</p>
+							<p class="paginatiom__num">1-10 of 100 Blogs</p>
 							<button class="pagination__btn pagination__btn--prev disabled">
 								<i class="fa fa-chevron-left" aria-hidden="true"></i>
 							</button>
-							<button class="pagination__btn pagination__btn--next disabled">
+							<button class="pagination__btn pagination__btn--next">
 								<i class="fa fa-chevron-right" aria-hidden="true"></i>
 							</button>
 						</div>
 					</div>
 					</div>
 				</form>
-				
-				<!--MODAL POPUP for SAVED LISTINGS buttons-->
-				<div id="modal-saved-listings" class="zoom-anim-dialog mfp-hide">
-					<h3 class="modal__title">Listings saved by Hamid Khan</h3>
-					<ul class="modal-sl__address-box">
-						<li class="modal-sl__address-line">
-							<span class="modal__sl-address">
-								ADDRESS
-							</span>
-							<div class="modal__sl-buttons">
-								<a role="button" href="#" class="btn btn--ugly-blue">View</a>
-								<a role="button" href="#" class="btn btn--light-grey">Delete</a>
-							</div>
-						</li>
-						<li class="modal-sl__address-line">
-							<span class="modal__sl-address">
-								14563 32 AVENUE, $1,798,000
-							</span>
-							<div class="modal__sl-buttons">
-								<a role="button" href="#" class="btn btn--ugly-blue">View</a>
-								<a role="button" href="#" class="btn btn--light-grey">Delete</a>
-							</div>
-						</li>
-						<li class="modal-sl__address-line">
-							<span class="modal__sl-address">
-								3286 CANTERBURY DRIVE, $1,688,000
-							</span>
-							<div class="modal__sl-buttons">
-								<a role="button" href="#" class="btn btn--ugly-blue">View</a>
-								<a role="button" href="#" class="btn btn--light-grey">Delete</a>
-							</div>
-						</li>
-						<li class="modal-sl__address-line">
-							<span class="modal__sl-address">
-								14563 32 AVENUE, $1,798,000
-							</span>
-							<div class="modal__sl-buttons">
-								<a role="button" href="#" class="btn btn--ugly-blue">View</a>
-								<a role="button" href="#" class="btn btn--light-grey">Delete</a>
-							</div>
-						</li>
-						<li class="modal-sl__address-line">
-							<span class="modal__sl-address">
-								3286 CANTERBURY DRIVE, $1,688,000
-							</span>
-							<div class="modal__sl-buttons">
-								<a role="button" href="#" class="btn btn--ugly-blue">View</a>
-								<a role="button" href="#" class="btn btn--light-grey">Delete</a>
-							</div>
-						</li>
-					</ul>
-				</div>
 			</div>
 		</main>
 
