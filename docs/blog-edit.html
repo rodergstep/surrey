@@ -129,12 +129,11 @@
             </div>
             <div class="buttons">
                 <div class="qq-upload-button-selector qq-upload-button">
-                    <div>Choose images</div>
+                    <div>Upload Images</div>
                 </div>
-				<span>after that</span>
                 <button type="button" id="trigger-upload" class="btn btn-primary">
                     <i class="fa fa-upload" aria-hidden="true"></i>
-					Press to Save
+					Save
                 </button>
             </div>
             <span class="qq-drop-processing-selector qq-drop-processing">
@@ -192,20 +191,69 @@
 			<div class="container">
 				<div class="main__title-box">
 					<h2 class="main__title">
-						Blog Photos
+						Create New Blog Post 
 					</h2>
 					<div role="button" class="tablenav__button--add button--back">
 						<i class="fa fa-arrow-left" aria-hidden="true"></i>
 						<a href="blog.html">Back to Blogs</a>
 					</div>
 				</div>
-				<div class="blog__add-photos">
-					<p class="add-photos__title">Add Photos</p>
-					<!-- Fine Uploader DOM Element-->
-    				<div id="fine-uploader-manual-trigger"></div>
-					<p class="add-photos__requirement">
-						Image size must be less than 500 KB. Drag images to left or right <br> Image diamentions can’t be less than 400x300 Px
-					</p>
+                <div class="blog__post">                
+                    <!--POST EDIT-->
+                    <div class="blog__post-edit">
+                        <label for="post-title" class="blog__post-title">Blog Title</label>
+                        <input type="text" placeholder="Enter Blog title" id="post-title" value="Can New Kitchen Appliances Increase the Value of Your Home?">
+                        <h5 class="blog__post-title">Content</h5>
+                        <div class="blog__post-toolbar"></div>
+                        <textarea name="post-area" id="" rows="10" class="blog__post-textarea" placeholder="Content" >Next to a major kitchen renovation, replacing appliances is the most expensive way to upgrade the space. So if you’re purchasing a new refrigerator, stove or dishwasher in order to make your home more attractive to buyers, you want to make wise purchasing decisions. 
+
+The most important consideration is how the appliances will look in the kitchen. Ideally, they should match in colour and style. They should also be the right size for the space. The last thing you want is a fridge that’s so large it dominates the room, or a stove that’s a completely different style and looks out-of-place.
+
+Appearance is important, but so are the features. Buyers viewing your home will scrutinize the appliances. They’ll notice if the fridge has a cold water and ice dispenser. They’ll ask if the dishwasher has noise-reduction features. Double ovens and quick-heating burners (which are now available on electric stoves) will also get a buyer’s attention.
+
+Power consumption is also a big issue these days. Increasingly, buyers are interested in the energy efficient features of a home — appliances included. So, as your REALTOR® I would point out appliances with energy-saving features, such as a dishwasher with a slow-run cycle that saves power.
+
+Kitchen appliances may seem minor compared to the overall appeal of your property, but they do make a difference. Purchase wisely!</textarea>
+                    </div>
+                    <!--POST SIDEBAR-->
+                    <div class="blog__post-sidebar">
+                        <div class="blog__post-publish sidebar__section">
+                            <select name="status" id="bl__input--status">
+                                <option>Publish</option>	
+                                <option value="1">Draft</option>
+                                <option value="2">Publish</option>
+                            </select>
+                            <div class="publish__buttons">
+                                <button class="btn--square btn--grey">Cancel</button>
+                                <button class="btn--square btn--ugly-blue">Save</button>
+                            </div>
+                        </div>
+                        <div class="blog__post-information sidebar__section">
+                            <h5 class="blog__post-title">Post Information</h5>
+                            <ul>
+                                <li>
+                                    <span class="info-left">Author Name</span>
+                                    <span class="info-right">Hamid Khan</span>
+                                </li>
+                                <li>
+                                    <span class="info-left">Published Date</span>
+                                    <span class="info-right">20 April 2017</span>
+                                </li>
+                                <li>
+                                    <span class="info-left">Visibility</span>
+                                    <span class="info-right">Public</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="blog__add-photos">
+                             <!-- Fine Uploader DOM Element-->
+                            <div id="fine-uploader-manual-trigger"></div>
+                            <p class="add-photos__requirement">
+                                Image size must be less than 500 KB
+                            </p>
+                        </div>
+                    </div>
 				</div>
  
         <!-- Your code to create an instance of Fine Uploader and bind to the DOM/template -->

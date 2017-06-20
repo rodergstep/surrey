@@ -129,12 +129,11 @@
             </div>
             <div class="buttons">
                 <div class="qq-upload-button-selector qq-upload-button">
-                    <div>Choose images</div>
+                    <div>Upload Images</div>
                 </div>
-				<span>after that</span>
                 <button type="button" id="trigger-upload" class="btn btn-primary">
                     <i class="fa fa-upload" aria-hidden="true"></i>
-					Press to Save
+					Save
                 </button>
             </div>
             <span class="qq-drop-processing-selector qq-drop-processing">
@@ -192,20 +191,61 @@
 			<div class="container">
 				<div class="main__title-box">
 					<h2 class="main__title">
-						Blog Photos
+						Create New Blog Post 
 					</h2>
 					<div role="button" class="tablenav__button--add button--back">
 						<i class="fa fa-arrow-left" aria-hidden="true"></i>
 						<a href="blog.html">Back to Blogs</a>
 					</div>
 				</div>
-				<div class="blog__add-photos">
-					<p class="add-photos__title">Add Photos</p>
-					<!-- Fine Uploader DOM Element-->
-    				<div id="fine-uploader-manual-trigger"></div>
-					<p class="add-photos__requirement">
-						Image size must be less than 500 KB. Drag images to left or right <br> Image diamentions can’t be less than 400x300 Px
-					</p>
+                <div class="blog__post">                
+                    <!--POST EDIT-->
+                    <div class="blog__post-edit">
+                        <label for="post-title" class="blog__post-title">Blog Title</label>
+                        <input type="text" placeholder="Enter Blog title" id="post-title">
+                        <h5 class="blog__post-title">Content</h5>
+                        <div class="blog__post-toolbar"></div>
+                        <textarea name="post-area" id="" rows="10" class="blog__post-textarea" placeholder="Content"></textarea>
+                    </div>
+                    <!--POST SIDEBAR-->
+                    <div class="blog__post-sidebar">
+                        <div class="blog__post-publish sidebar__section">
+                            <select name="status" id="bl__input--status">
+                                <option>Draft</option>	
+                                <option value="1">Publish</option>
+                                <option value="2">Draft</option>
+                            </select>
+                            <div class="publish__buttons">
+                                <button class="btn--square btn--grey">Cancel</button>
+                                <button class="btn--square btn--ugly-blue">Publish</button>
+                            </div>
+                        </div>
+                        <div class="blog__post-information sidebar__section">
+                            <h5 class="blog__post-title">Post Information</h5>
+                            <ul>
+                                <li>
+                                    <span class="info-left">Author Name</span>
+                                    <span class="info-right">Hamid Khan</span>
+                                </li>
+                                <li>
+                                    <span class="info-left">Publishing Date</span>
+                                    <span class="info-right">20 April 2017</span>
+                                </li>
+                                <li>
+                                    <span class="info-left">Visibility</span>
+                                    <span class="info-right">Public</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="blog__add-photos">
+                             <!-- Fine Uploader DOM Element-->
+                            <div id="fine-uploader-manual-trigger"></div>
+                            <p class="add-photos__requirement">
+                                Image size must be less than 500 KB
+                            </p>
+                        </div>
+                    </div>
 				</div>
  
         <!-- Your code to create an instance of Fine Uploader and bind to the DOM/template -->
