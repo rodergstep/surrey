@@ -111,101 +111,101 @@
 				</ul>
 			</div>
 		</nav>
-   <!-- Fine Uploader New/Modern CSS file -->
-    <link href="css/vendors/fine-uploader-new.min.css" rel="stylesheet">
+<!-- Fine Uploader New/Modern CSS file -->
+<link href="css/vendors/fine-uploader-new.min.css" rel="stylesheet">
 
-    <!-- Fine Uploader JS file -->
-    <script src="js/vendors/fine-uploader.min.js"></script>
+<!-- Fine Uploader JS file -->
+<script src="js/vendors/fine-uploader.min.js"></script>
 
-    <!-- Fine Uploader Thumbnails template w/ customization -->
-    <script type="text/template" id="qq-template-manual-trigger">
-	
-        <div class="qq-uploader-selector qq-uploader" qq-drop-area-text="Drop images Here">
-            <div class="qq-total-progress-bar-container-selector qq-total-progress-bar-container">
-                <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="qq-total-progress-bar-selector qq-progress-bar qq-total-progress-bar"></div>
+<!-- Fine Uploader Thumbnails template w/ customization -->
+<script type="text/template" id="qq-template-manual-trigger">
+
+    <div class="qq-uploader-selector qq-uploader" qq-drop-area-text="Drop images Here">
+        <div class="qq-total-progress-bar-container-selector qq-total-progress-bar-container">
+            <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="qq-total-progress-bar-selector qq-progress-bar qq-total-progress-bar"></div>
+        </div>
+        <div class="qq-upload-drop-area-selector qq-upload-drop-area" qq-hide-dropzone>
+            <span class="qq-upload-drop-area-text-selector"></span>
+        </div>
+        <div class="buttons">
+            <div class="qq-upload-button-selector qq-upload-button">
+                <div>Upload Images</div>
             </div>
-            <div class="qq-upload-drop-area-selector qq-upload-drop-area" qq-hide-dropzone>
-                <span class="qq-upload-drop-area-text-selector"></span>
-            </div>
-            <div class="buttons">
-                <div class="qq-upload-button-selector qq-upload-button">
-                    <div>Upload Images</div>
-                </div>
-                <button type="button" id="trigger-upload" class="btn btn-primary">
+            <button type="button" id="trigger-upload" class="btn btn-primary">
                     <i class="fa fa-upload" aria-hidden="true"></i>
 					Save
                 </button>
-            </div>
-            <span class="qq-drop-processing-selector qq-drop-processing">
-                <span>Processing dropped files...</span>
-                <span class="qq-drop-processing-spinner-selector qq-drop-processing-spinner"></span>
-            </span>
-            <ul class="qq-upload-list-selector qq-upload-list" aria-live="polite" aria-relevant="additions removals">
-                <li>
-                    <div class="qq-progress-bar-container-selector">
-                        <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="qq-progress-bar-selector qq-progress-bar"></div>
-                    </div>
-                    <span class="qq-upload-spinner-selector qq-upload-spinner"></span>
-                    <img class="qq-thumbnail-selector" qq-max-size="100" qq-server-scale>
-                    <span class="qq-upload-file-selector qq-upload-file"></span>
-                    <span class="qq-edit-filename-icon-selector qq-edit-filename-icon" aria-label="Edit filename"></span>
-                    <input class="qq-edit-filename-selector qq-edit-filename" tabindex="0" type="text">
-                    <span class="qq-upload-size-selector qq-upload-size"></span>
-					<i type="button" class="qq-upload-cancel-selector qq-upload-cancel fa fa-times-circle" aria-hidden="true"></i>
-                   
-                    <button type="button" class="qq-btn qq-upload-retry-selector qq-upload-retry">Retry</button>
-                    <button type="button" class="qq-btn qq-upload-delete-selector qq-upload-delete">Delete</button>
-                    <span role="status" class="qq-upload-status-text-selector qq-upload-status-text"></span>
-                </li>
-            </ul>
-
-            <dialog class="qq-alert-dialog-selector">
-                <div class="qq-dialog-message-selector"></div>
-                <div class="qq-dialog-buttons">
-                    <button type="button" class="qq-cancel-button-selector">Close</button>
-                </div>
-            </dialog>
-
-            <dialog class="qq-confirm-dialog-selector">
-                <div class="qq-dialog-message-selector"></div>
-                <div class="qq-dialog-buttons">
-                    <button type="button" class="qq-cancel-button-selector">No</button>
-                    <button type="button" class="qq-ok-button-selector">Yes</button>
-                </div>
-            </dialog>
-
-            <dialog class="qq-prompt-dialog-selector">
-                <div class="qq-dialog-message-selector"></div>
-                <input type="text">
-                <div class="qq-dialog-buttons">
-                    <button type="button" class="qq-cancel-button-selector">Cancel</button>
-                    <button type="button" class="qq-ok-button-selector">Ok</button>
-                </div>
-            </dialog>
         </div>
-    </script>
+        <span class="qq-drop-processing-selector qq-drop-processing">
+                <span>Processing dropped files...</span>
+        <span class="qq-drop-processing-spinner-selector qq-drop-processing-spinner"></span>
+        </span>
+        <ul class="qq-upload-list-selector qq-upload-list" aria-live="polite" aria-relevant="additions removals">
+            <li>
+                <div class="qq-progress-bar-container-selector">
+                    <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="qq-progress-bar-selector qq-progress-bar"></div>
+                </div>
+                <span class="qq-upload-spinner-selector qq-upload-spinner"></span>
+                <img class="qq-thumbnail-selector" qq-max-size="100" qq-server-scale>
+                <span class="qq-upload-file-selector qq-upload-file"></span>
+                <span class="qq-edit-filename-icon-selector qq-edit-filename-icon" aria-label="Edit filename"></span>
+                <input class="qq-edit-filename-selector qq-edit-filename" tabindex="0" type="text">
+                <span class="qq-upload-size-selector qq-upload-size"></span>
+                <i type="button" class="qq-upload-cancel-selector qq-upload-cancel fa fa-times-circle" aria-hidden="true"></i>
 
-   
-		<!--MAIN-->
-		<main class="main main--blog">
-			<div class="container">
-				<div class="main__title-box">
-					<h2 class="main__title">
-						Create New Blog Post 
-					</h2>
-					<div role="button" class="tablenav__button--add button--back">
-						<i class="fa fa-arrow-left" aria-hidden="true"></i>
-						<a href="blog.html">Back to Blogs</a>
-					</div>
-				</div>
-                <div class="blog__post">                
-                    <!--POST EDIT-->
-                    <div class="blog__post-edit">
-                        <label for="post-title" class="blog__post-title">Blog Title</label>
-                        <input type="text" placeholder="Enter Blog title" id="post-title" value="Can New Kitchen Appliances Increase the Value of Your Home?">
-                        <h5 class="blog__post-title">Content</h5>
-                        <div class="blog__post-toolbar"></div>
-                        <textarea name="post-area" id="" rows="10" class="blog__post-textarea" placeholder="Content" >Next to a major kitchen renovation, replacing appliances is the most expensive way to upgrade the space. So if you’re purchasing a new refrigerator, stove or dishwasher in order to make your home more attractive to buyers, you want to make wise purchasing decisions. 
+                <button type="button" class="qq-btn qq-upload-retry-selector qq-upload-retry">Retry</button>
+                <button type="button" class="qq-btn qq-upload-delete-selector qq-upload-delete">Delete</button>
+                <span role="status" class="qq-upload-status-text-selector qq-upload-status-text"></span>
+            </li>
+        </ul>
+
+        <dialog class="qq-alert-dialog-selector">
+            <div class="qq-dialog-message-selector"></div>
+            <div class="qq-dialog-buttons">
+                <button type="button" class="qq-cancel-button-selector">Close</button>
+            </div>
+        </dialog>
+
+        <dialog class="qq-confirm-dialog-selector">
+            <div class="qq-dialog-message-selector"></div>
+            <div class="qq-dialog-buttons">
+                <button type="button" class="qq-cancel-button-selector">No</button>
+                <button type="button" class="qq-ok-button-selector">Yes</button>
+            </div>
+        </dialog>
+
+        <dialog class="qq-prompt-dialog-selector">
+            <div class="qq-dialog-message-selector"></div>
+            <input type="text">
+            <div class="qq-dialog-buttons">
+                <button type="button" class="qq-cancel-button-selector">Cancel</button>
+                <button type="button" class="qq-ok-button-selector">Ok</button>
+            </div>
+        </dialog>
+    </div>
+</script>
+
+
+<!--MAIN-->
+<main class="main main--blog">
+    <div class="container">
+        <div class="main__title-box">
+            <h2 class="main__title">
+                Create New Blog Post
+            </h2>
+            <div role="button" class="tablenav__button--add button--back">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                <a href="blog.html">Back to Blogs</a>
+            </div>
+        </div>
+        <div class="blog__post">
+            <!--POST EDIT-->
+            <div class="blog__post-edit">
+                <label for="post-title" class="blog__post-title">Blog Title</label>
+                <input type="text" placeholder="Enter Blog title" id="post-title" value="Can New Kitchen Appliances Increase the Value of Your Home?">
+                <h5 class="blog__post-title">Content</h5>
+                <div class="blog__post-toolbar"></div>
+                <textarea name="post-area" id="" rows="10" class="blog__post-textarea" placeholder="Content">Next to a major kitchen renovation, replacing appliances is the most expensive way to upgrade the space. So if you’re purchasing a new refrigerator, stove or dishwasher in order to make your home more attractive to buyers, you want to make wise purchasing decisions. 
 
 The most important consideration is how the appliances will look in the kitchen. Ideally, they should match in colour and style. They should also be the right size for the space. The last thing you want is a fridge that’s so large it dominates the room, or a stove that’s a completely different style and looks out-of-place.
 
@@ -214,76 +214,76 @@ Appearance is important, but so are the features. Buyers viewing your home will 
 Power consumption is also a big issue these days. Increasingly, buyers are interested in the energy efficient features of a home — appliances included. So, as your REALTOR® I would point out appliances with energy-saving features, such as a dishwasher with a slow-run cycle that saves power.
 
 Kitchen appliances may seem minor compared to the overall appeal of your property, but they do make a difference. Purchase wisely!</textarea>
-                    </div>
-                    <!--POST SIDEBAR-->
-                    <div class="blog__post-sidebar">
-                        <div class="blog__post-publish sidebar__section">
-                            <select name="status" id="bl__input--status">
+            </div>
+            <!--POST SIDEBAR-->
+            <div class="blog__post-sidebar">
+                <div class="blog__post-publish sidebar__section">
+                    <select name="status" id="bl__input--status">
                                 <option>Publish</option>	
                                 <option value="1">Draft</option>
                                 <option value="2">Publish</option>
                             </select>
-                            <div class="publish__buttons">
-                                <button class="btn--square btn--grey">Cancel</button>
-                                <button class="btn--square btn--ugly-blue">Save</button>
-                            </div>
-                        </div>
-                        <div class="blog__post-information sidebar__section">
-                            <h5 class="blog__post-title">Post Information</h5>
-                            <ul>
-                                <li>
-                                    <span class="info-left">Author Name</span>
-                                    <span class="info-right">Hamid Khan</span>
-                                </li>
-                                <li>
-                                    <span class="info-left">Published Date</span>
-                                    <span class="info-right">20 April 2017</span>
-                                </li>
-                                <li>
-                                    <span class="info-left">Visibility</span>
-                                    <span class="info-right">Public</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="blog__add-photos">
-                             <!-- Fine Uploader DOM Element-->
-                            <div id="fine-uploader-manual-trigger"></div>
-                            <p class="add-photos__requirement">
-                                Image size must be less than 500 KB
-                            </p>
-                        </div>
+                    <div class="publish__buttons">
+                        <button class="btn--square btn--grey">Cancel</button>
+                        <button class="btn--square btn--ugly-blue">Save</button>
                     </div>
-				</div>
- 
-        <!-- Your code to create an instance of Fine Uploader and bind to the DOM/template -->
-    <script>
-        var manualUploader = new qq.FineUploader({
-            element: document.getElementById('fine-uploader-manual-trigger'),
-            template: 'qq-template-manual-trigger',
-            request: {
-                endpoint: '/server/uploads'
-            },
-            thumbnails: {
-                placeholders: {
-                    waitingPath: '/img/placeholders/waiting-generic.png',
-                    notAvailablePath: '/img/placeholders/not_available-generic.png'
-                }
-            },
-            autoUpload: false,
-            debug: true,
-            validation: {
-                allowedExtensions: ['jpeg', 'jpg', 'png'],
-                itemLimit: 5,
-                sizeLimit: 512000 // 500 kB = 500 * 1024 bytes
-            }
-        });
+                </div>
+                <div class="blog__post-information sidebar__section">
+                    <h5 class="blog__post-title">Post Information</h5>
+                    <ul>
+                        <li>
+                            <span class="info-left">Author Name</span>
+                            <span class="info-right">Hamid Khan</span>
+                        </li>
+                        <li>
+                            <span class="info-left">Published Date</span>
+                            <span class="info-right">20 April 2017</span>
+                        </li>
+                        <li>
+                            <span class="info-left">Visibility</span>
+                            <span class="info-right">Public</span>
+                        </li>
+                    </ul>
+                </div>
 
-        qq(document.getElementById("trigger-upload")).attach("click", function() {
-            manualUploader.uploadStoredFiles();
-        });
-    </script>
-</div>
+                <div class="blog__add-photos">
+                    <!-- Fine Uploader DOM Element-->
+                    <div id="fine-uploader-manual-trigger"></div>
+                    <p class="add-photos__requirement">
+                        Image size must be less than 500 KB
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Your code to create an instance of Fine Uploader and bind to the DOM/template -->
+        <script>
+            var manualUploader = new qq.FineUploader({
+                element: document.getElementById('fine-uploader-manual-trigger'),
+                template: 'qq-template-manual-trigger',
+                request: {
+                    endpoint: '/server/uploads'
+                },
+                thumbnails: {
+                    placeholders: {
+                        waitingPath: '/img/placeholders/waiting-generic.png',
+                        notAvailablePath: '/img/placeholders/not_available-generic.png'
+                    }
+                },
+                autoUpload: false,
+                debug: true,
+                validation: {
+                    allowedExtensions: ['jpeg', 'jpg', 'png'],
+                    itemLimit: 5,
+                    sizeLimit: 512000 // 500 kB = 500 * 1024 bytes
+                }
+            });
+
+            qq(document.getElementById("trigger-upload")).attach("click", function() {
+                manualUploader.uploadStoredFiles();
+            });
+        </script>
+    </div>
 </main>
 		<!--FOOTER-->
 		<footer class="footer">

@@ -112,374 +112,374 @@
 			</div>
 		</nav>
 
-				<!--THIS PAGE USES TEMPLATE OF BUILDINGS PAGE-->
-		<!--MAIN-->
-		<main class="main main--blog main--bl">
-			<div class="container">
-				<!--Blogs-->
-				<form action="#" class="bl__search-box">
-					<div class="bl__field-1">
-						<label for="bl__input--key">By Keywords</label>
-						<input type="text" id="bl__input--key" placeholder="Search by keywords">
-					</div>
-					<div class="bl__field-2">
-						<label for="bl__input--status">By Status</label>
-						<select name="status" id="bl__input--status">
+<!--THIS PAGE USES TEMPLATE OF BUILDINGS PAGE-->
+<!--MAIN-->
+<main class="main main--blog main--bl">
+    <div class="container">
+        <!--Blogs-->
+        <form action="#" class="bl__search-box">
+            <div class="bl__field-1">
+                <label for="bl__input--key">By Keywords</label>
+                <input type="text" id="bl__input--key" placeholder="Search by keywords">
+            </div>
+            <div class="bl__field-2">
+                <label for="bl__input--status">By Status</label>
+                <select name="status" id="bl__input--status">
 							<option>Search by Status</option>	
 							<option value="1">Status 1</option>
 							<option value="2">Status 2</option>
 							<option value="3">Status 3</option>
 						</select>
-					</div>
-					<div class="bl__field-3">
-						<label for="bl__input--date">By Date</label>
-						<select name="status" id="bl__input--date">
+            </div>
+            <div class="bl__field-3">
+                <label for="bl__input--date">By Date</label>
+                <select name="status" id="bl__input--date">
 							<option>Search by Date</option>	
 							<option value="1">Date 1</option>
 							<option value="2">Date 2</option>
 							<option value="3">Date 3</option>
 						</select>
-					</div>
-					<div class="bl__search-btn">
-						<button class="bl__search-submit">
+            </div>
+            <div class="bl__search-btn">
+                <button class="bl__search-submit">
 							<i class="fa fa-search" aria-hidden="true"></i>
 							<span>SEARCH</span>
 						</button>
-					</div>
-				</form>
-				<form action="#" class="main__filter">
-					<!-- TABLE TOP NAVIGATION-->
-					<div class="main__tablenav main__tablenav--top">
-						<div class="tablenav__actions">
-							<div class="tablenav__button--light tablenav__button--checkall">
-								<label for="input--checkall" class="input-box">
+            </div>
+        </form>
+        <form action="#" class="main__filter">
+            <!-- TABLE TOP NAVIGATION-->
+            <div class="main__tablenav main__tablenav--top">
+                <div class="tablenav__actions">
+                    <div class="tablenav__button--light tablenav__button--checkall">
+                        <label for="input--checkall" class="input-box">
 									<input type="checkbox" name="check" class="input--check" id="input--checkall">Select
 									<span class="input--checkpseudo"><i class="fa fa-check" aria-hidden="true"></i></span>
 								</label>
-							</div>
-							<div class="tablenav__button--light tablenav__button--sort">
-								<i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
-								<select name="select" class="tablenav__sort">
+                    </div>
+                    <div class="tablenav__button--light tablenav__button--sort">
+                        <i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
+                        <select name="select" class="tablenav__sort">
 									<option value="value1">Sort</option>
 									<option value="value2">to top</option>
 									<option value="value3">3</option>
 								</select>
-							</div>
-							<!--add button-->
-							<div role="button" class="tablenav__button--add">
-								<i class="fa fa-plus" aria-hidden="true"></i>
-								<a href="blog-new.html">Create New Blog</a>
-							</div>
-							<!--table pagination-->
-						<div class="tablenav__pagination">
-							<p class="paginatiom__num">1-10 of 100 Blogs</p>
-							<button class="pagination__btn pagination__btn--prev disabled">
+                    </div>
+                    <!--add button-->
+                    <div role="button" class="tablenav__button--add">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <a href="blog-new.html">Create New Blog</a>
+                    </div>
+                    <!--table pagination-->
+                    <div class="tablenav__pagination">
+                        <p class="paginatiom__num">1-10 of 100 Blogs</p>
+                        <button class="pagination__btn pagination__btn--prev disabled">
 								<i class="fa fa-chevron-left" aria-hidden="true"></i>
 							</button>
-							<button class="pagination__btn pagination__btn--next">
+                        <button class="pagination__btn pagination__btn--next">
 								<i class="fa fa-chevron-right" aria-hidden="true"></i>
 							</button>
-						</div>
-					</div>
-					</div>
-					<!--Table-->
-					<table class="main__table">
-						<!--thead-->
-						<thead>
-							<!--row-->
-							<tr>
-								<th class=""></th>
-								<th class="table__column--">Created at</th>
-								<th class="">Title</th>
-								<th class="">Status</th>
-								<th class="">Publish at</th>
-								<th class=""></th>
-							</tr>
-						</thead>
-						<!--tbody-->
-						<tbody>
-							<!--row-->
-							<tr>
-								<th class="table__check-cell table__check-cell--active">
-									<label for="input--check1" class="input-box">
+                    </div>
+                </div>
+            </div>
+            <!--Table-->
+            <table class="main__table">
+                <!--thead-->
+                <thead>
+                    <!--row-->
+                    <tr>
+                        <th class=""></th>
+                        <th class="table__column--">Created at</th>
+                        <th class="">Title</th>
+                        <th class="">Status</th>
+                        <th class="">Publish at</th>
+                        <th class=""></th>
+                    </tr>
+                </thead>
+                <!--tbody-->
+                <tbody>
+                    <!--row-->
+                    <tr>
+                        <th class="table__check-cell table__check-cell--active">
+                            <label for="input--check1" class="input-box">
 										<input type="checkbox" name="check" class="input--check" id="input--check1">
 										<span class="input--checkpseudo">
 											<i class="fa fa-check" aria-hidden="true"></i>
 										</span>
 									</label>
-								</th>
-								<td>Jun 12, 2016</td>
-								<td>
-									<span class="table__title-cell">
+                        </th>
+                        <td>Jun 12, 2016</td>
+                        <td>
+                            <span class="table__title-cell">
 										Can New Kitchen Appliances Increase the Value of Your Home?
 									</span>
-								</td>
-								<td>Publish</td>
-								<td>Jun 12, 2016</td>
-								<td>
-									<a href="blog-edit.html" role="button" class="btn btn--ugly-blue">Edit</a>
-									<a href="blog-preview.html" role="button" class="btn btn--water-blue">Preview</a>
-									<a href="blog-photos.html" role="button" class="btn btn--piss-yellow">Photo(0)</a>
-								</td>
-							</tr>
-							<!--row-->
-							<tr>
-								<th class="table__check-cell">
-									<label for="input--check2" class="input-box">
+                        </td>
+                        <td>Publish</td>
+                        <td>Jun 12, 2016</td>
+                        <td>
+                            <a href="blog-edit.html" role="button" class="btn btn--ugly-blue">Edit</a>
+                            <a href="blog-preview.html" role="button" class="btn btn--water-blue">Preview</a>
+                            <a href="blog-photos.html" role="button" class="btn btn--piss-yellow">Photo(0)</a>
+                        </td>
+                    </tr>
+                    <!--row-->
+                    <tr>
+                        <th class="table__check-cell">
+                            <label for="input--check2" class="input-box">
 										<input type="checkbox" name="check" class="input--check" id="input--check2">
 										<span class="input--checkpseudo">
 											<i class="fa fa-check" aria-hidden="true"></i>
 										</span>
-									</label>									
-								</th>
-								<td>Mar 19, 2015</td>
-								<td>
-									<span class="table__title-cell">
+									</label>
+                        </th>
+                        <td>Mar 19, 2015</td>
+                        <td>
+                            <span class="table__title-cell">
 										Avoiding moisture problems in the home
 									</span>
-								</td>
-								<td>Publish</td>
-								<td>Mar 19, 2015</td>								
-								<td>
-									<a href="blog-edit.html" role="button" class="btn btn--ugly-blue">Edit</a>
-									<a href="blog-preview.html" role="button" class="btn btn--water-blue">Preview</a>
-									<a href="blog-photos.html" role="button" class="btn btn--piss-yellow">Photo(0)</a>
-								</td>
-							</tr>
-							<!--row-->
-							<tr>
-								<th class="table__check-cell">
-									<label for="input--check3" class="input-box">
+                        </td>
+                        <td>Publish</td>
+                        <td>Mar 19, 2015</td>
+                        <td>
+                            <a href="blog-edit.html" role="button" class="btn btn--ugly-blue">Edit</a>
+                            <a href="blog-preview.html" role="button" class="btn btn--water-blue">Preview</a>
+                            <a href="blog-photos.html" role="button" class="btn btn--piss-yellow">Photo(0)</a>
+                        </td>
+                    </tr>
+                    <!--row-->
+                    <tr>
+                        <th class="table__check-cell">
+                            <label for="input--check3" class="input-box">
 										<input type="checkbox" name="check" class="input--check" id="input--check3">
 										<span class="input--checkpseudo">
 											<i class="fa fa-check" aria-hidden="true"></i>
 										</span>
 									</label>
-								</th>
-								<td>Jan 21, 2015</td>
-								<td>
-									<span class="table__title-cell">
+                        </th>
+                        <td>Jan 21, 2015</td>
+                        <td>
+                            <span class="table__title-cell">
 										Bank of Canada cuts rates; shocks everyone!
 									</span>
-								</td>
-								<td>Publish</td>
-								<td>Jan 21, 2015</td>	
-								<td>
-									<a href="blog-edit.html" role="button" class="btn btn--ugly-blue">Edit</a>
-									<a href="blog-preview.html" role="button" class="btn btn--water-blue">Preview</a>
-									<a href="blog-photos.html" role="button" class="btn btn--piss-yellow">Photo(0)</a>
-								</td>
-							</tr>
-							<!--row-->
-							<tr>
-								<th class="table__check-cell">
-									<label for="input--check4" class="input-box">
+                        </td>
+                        <td>Publish</td>
+                        <td>Jan 21, 2015</td>
+                        <td>
+                            <a href="blog-edit.html" role="button" class="btn btn--ugly-blue">Edit</a>
+                            <a href="blog-preview.html" role="button" class="btn btn--water-blue">Preview</a>
+                            <a href="blog-photos.html" role="button" class="btn btn--piss-yellow">Photo(0)</a>
+                        </td>
+                    </tr>
+                    <!--row-->
+                    <tr>
+                        <th class="table__check-cell">
+                            <label for="input--check4" class="input-box">
 										<input type="checkbox" name="check" class="input--check" id="input--check4">
 										<span class="input--checkpseudo">
 											<i class="fa fa-check" aria-hidden="true"></i>
 										</span>
 									</label>
-								</th>
-								<td>Nov 24, 2014</td>
-								<td>
-									<span class="table__title-cell">
+                        </th>
+                        <td>Nov 24, 2014</td>
+                        <td>
+                            <span class="table__title-cell">
 										Uber Vancouver
 									</span>
-								</td>
-								<td>Publish</td>
-								<td>Nov 24, 2014</td>			
-								<td>			
-									<a href="blog-edit.html" role="button" class="btn btn--ugly-blue">Edit</a>
-									<a href="blog-preview.html" role="button" class="btn btn--water-blue">Preview</a>
-									<a href="blog-photos.html" role="button" class="btn btn--piss-yellow">Photo(0)</a>
-								</td>
-							</tr>
-							<!--row-->
-							<tr>
-								<th class="table__check-cell">
-									<label for="input--check5" class="input-box">
+                        </td>
+                        <td>Publish</td>
+                        <td>Nov 24, 2014</td>
+                        <td>
+                            <a href="blog-edit.html" role="button" class="btn btn--ugly-blue">Edit</a>
+                            <a href="blog-preview.html" role="button" class="btn btn--water-blue">Preview</a>
+                            <a href="blog-photos.html" role="button" class="btn btn--piss-yellow">Photo(0)</a>
+                        </td>
+                    </tr>
+                    <!--row-->
+                    <tr>
+                        <th class="table__check-cell">
+                            <label for="input--check5" class="input-box">
 										<input type="checkbox" name="check" class="input--check" id="input--check5">
 										<span class="input--checkpseudo">
 											<i class="fa fa-check" aria-hidden="true"></i>
 										</span>
 									</label>
-								</th>
-								<td>Nov 20, 2014</td>
-								<td>
-									<span class="table__title-cell">
+                        </th>
+                        <td>Nov 20, 2014</td>
+                        <td>
+                            <span class="table__title-cell">
 										Award Wallet, for points collectors
 									</span>
-								</td>
-								<td>Publish</td>
-								<td>Nov 20, 2014</td>	
-								<td>
-									<a href="blog-edit.html" role="button" class="btn btn--ugly-blue">Edit</a>
-									<a href="blog-preview.html" role="button" class="btn btn--water-blue">Preview</a>
-									<a href="blog-photos.html" role="button" class="btn btn--piss-yellow">Photo(0)</a>
-								</td>
-							</tr>
-							<!--row-->
-							<tr>
-								<th class="table__check-cell">
-									<label for="input--check6" class="input-box">
+                        </td>
+                        <td>Publish</td>
+                        <td>Nov 20, 2014</td>
+                        <td>
+                            <a href="blog-edit.html" role="button" class="btn btn--ugly-blue">Edit</a>
+                            <a href="blog-preview.html" role="button" class="btn btn--water-blue">Preview</a>
+                            <a href="blog-photos.html" role="button" class="btn btn--piss-yellow">Photo(0)</a>
+                        </td>
+                    </tr>
+                    <!--row-->
+                    <tr>
+                        <th class="table__check-cell">
+                            <label for="input--check6" class="input-box">
 										<input type="checkbox" name="check" class="input--check" id="input--check6">
 										<span class="input--checkpseudo">
 											<i class="fa fa-check" aria-hidden="true"></i>
 										</span>
 									</label>
-								</th>
-								<td>Nov 17, 2014</td>
-								<td>
-									<span class="table__title-cell">
+                        </th>
+                        <td>Nov 17, 2014</td>
+                        <td>
+                            <span class="table__title-cell">
 									Happy First-time Buyers Make Me Happy
-									</span>									
-								</td>
-								<td>Publish</td>
-								<td>Nov 17, 2014</td>	
-								<td>
-									<a href="blog-edit.html" role="button" class="btn btn--ugly-blue">Edit</a>
-									<a href="blog-preview.html" role="button" class="btn btn--water-blue">Preview</a>
-									<a href="blog-photos.html" role="button" class="btn btn--piss-yellow">Photo(0)</a>
-								</td>
-							</tr>
-							<!--row-->
-							<tr>
-								<th class="table__check-cell">
-									<label for="input--check7" class="input-box">
+									</span>
+                        </td>
+                        <td>Publish</td>
+                        <td>Nov 17, 2014</td>
+                        <td>
+                            <a href="blog-edit.html" role="button" class="btn btn--ugly-blue">Edit</a>
+                            <a href="blog-preview.html" role="button" class="btn btn--water-blue">Preview</a>
+                            <a href="blog-photos.html" role="button" class="btn btn--piss-yellow">Photo(0)</a>
+                        </td>
+                    </tr>
+                    <!--row-->
+                    <tr>
+                        <th class="table__check-cell">
+                            <label for="input--check7" class="input-box">
 										<input type="checkbox" name="check" class="input--check" id="input--check7">
 										<span class="input--checkpseudo">
 											<i class="fa fa-check" aria-hidden="true"></i>
 										</span>
 									</label>
-								</th>
-								<td>Sep 25, 2014</td>
-								<td>
-									<span class="table__title-cell">
+                        </th>
+                        <td>Sep 25, 2014</td>
+                        <td>
+                            <span class="table__title-cell">
 										A New Look at Caffeine
 									</span>
-								</td>
-								<td>Publish</td>
-								<td>Sep 25, 2014</td>	
-								<td>
-									<a href="blog-edit.html" role="button" class="btn btn--ugly-blue">Edit</a>
-									<a href="blog-preview.html" role="button" class="btn btn--water-blue">Preview</a>
-									<a href="blog-photos.html" role="button" class="btn btn--piss-yellow">Photo(0)</a>
-								</td>
-							</tr>
-							<!--row-->
-							<tr>
-								<th class="table__check-cell">
-									<label for="input--check8" class="input-box">
+                        </td>
+                        <td>Publish</td>
+                        <td>Sep 25, 2014</td>
+                        <td>
+                            <a href="blog-edit.html" role="button" class="btn btn--ugly-blue">Edit</a>
+                            <a href="blog-preview.html" role="button" class="btn btn--water-blue">Preview</a>
+                            <a href="blog-photos.html" role="button" class="btn btn--piss-yellow">Photo(0)</a>
+                        </td>
+                    </tr>
+                    <!--row-->
+                    <tr>
+                        <th class="table__check-cell">
+                            <label for="input--check8" class="input-box">
 										<input type="checkbox" name="check" class="input--check" id="input--check8">
 										<span class="input--checkpseudo">
 											<i class="fa fa-check" aria-hidden="true"></i>
 										</span>
 									</label>
-								</th>
-								<td>Sep 9, 2014</td>
-								<td>
-									<span class="table__title-cell">
+                        </th>
+                        <td>Sep 9, 2014</td>
+                        <td>
+                            <span class="table__title-cell">
 										8th Avenue Elite Realty in Surrey, closed by RECBC
 									</span>
-								</td>
-								<td>Publish</td>
-								<td>Sep 9, 2014</td>	
-								<td>
-									<a href="blog-edit.html" role="button" class="btn btn--ugly-blue">Edit</a>
-									<a href="blog-preview.html" role="button" class="btn btn--water-blue">Preview</a>
-									<a href="blog-photos.html" role="button" class="btn btn--piss-yellow">Photo(0)</a>
-								</td>
-							</tr>
-							<!--row-->
-							<tr>
-								<th class="table__check-cell">
-									<label for="input--check9" class="input-box">
+                        </td>
+                        <td>Publish</td>
+                        <td>Sep 9, 2014</td>
+                        <td>
+                            <a href="blog-edit.html" role="button" class="btn btn--ugly-blue">Edit</a>
+                            <a href="blog-preview.html" role="button" class="btn btn--water-blue">Preview</a>
+                            <a href="blog-photos.html" role="button" class="btn btn--piss-yellow">Photo(0)</a>
+                        </td>
+                    </tr>
+                    <!--row-->
+                    <tr>
+                        <th class="table__check-cell">
+                            <label for="input--check9" class="input-box">
 										<input type="checkbox" name="check" class="input--check" id="input--check9">
 										<span class="input--checkpseudo">
 											<i class="fa fa-check" aria-hidden="true"></i>
 										</span>
 									</label>
-								</th>
-								<td>Sep 2, 2014</td>
-								<td>
-									<span class="table__title-cell">
+                        </th>
+                        <td>Sep 2, 2014</td>
+                        <td>
+                            <span class="table__title-cell">
 										Why Pay Commission to a REALTOR®
 									</span>
-								</td>
-								<td>Publish</td>
-								<td>Sep 2, 2014</td>	
-								<td>
-									<a href="blog-edit.html" role="button" class="btn btn--ugly-blue">Edit</a>
-									<a href="blog-preview.html" role="button" class="btn btn--water-blue">Preview</a>
-									<a href="blog-photos.html" role="button" class="btn btn--piss-yellow">Photo(0)</a>
-								</td>
-							</tr>
-							<!--row-->
-							<tr>
-								<th class="table__check-cell">
-									<label for="input--check10" class="input-box">
+                        </td>
+                        <td>Publish</td>
+                        <td>Sep 2, 2014</td>
+                        <td>
+                            <a href="blog-edit.html" role="button" class="btn btn--ugly-blue">Edit</a>
+                            <a href="blog-preview.html" role="button" class="btn btn--water-blue">Preview</a>
+                            <a href="blog-photos.html" role="button" class="btn btn--piss-yellow">Photo(0)</a>
+                        </td>
+                    </tr>
+                    <!--row-->
+                    <tr>
+                        <th class="table__check-cell">
+                            <label for="input--check10" class="input-box">
 										<input type="checkbox" name="check" class="input--check" id="input--check10">
 										<span class="input--checkpseudo">
 											<i class="fa fa-check" aria-hidden="true"></i>
 										</span>
 									</label>
-								</th>
-								<td>Aug 18, 2014</td>
-								<td>
-									<span class="table__title-cell">
+                        </th>
+                        <td>Aug 18, 2014</td>
+                        <td>
+                            <span class="table__title-cell">
 										Steveston Village Development?
 									</span>
-								</td>
-								<td>Publish</td>
-								<td>Aug 18, 2014</td>	
-								<td>
-									<a href="blog-edit.html" role="button" class="btn btn--ugly-blue">Edit</a>
-									<a href="blog-preview.html" role="button" class="btn btn--water-blue">Preview</a>
-									<a href="blog-photos.html" role="button" class="btn btn--piss-yellow">Photo(0)</a>
-								</td>
-							</tr>
-						</tbody>	
-					</table>
-					
-					<!-- TABLE BOTTOM NAVIGATION-->
-					<div class="main__tablenav main__tablenav--top">
-						<div class="tablenav__actions">
-							<div class="tablenav__button--light tablenav__button--checkall">
-								<label for="input--checkall--bottom" class="input-box">
+                        </td>
+                        <td>Publish</td>
+                        <td>Aug 18, 2014</td>
+                        <td>
+                            <a href="blog-edit.html" role="button" class="btn btn--ugly-blue">Edit</a>
+                            <a href="blog-preview.html" role="button" class="btn btn--water-blue">Preview</a>
+                            <a href="blog-photos.html" role="button" class="btn btn--piss-yellow">Photo(0)</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- TABLE BOTTOM NAVIGATION-->
+            <div class="main__tablenav main__tablenav--top">
+                <div class="tablenav__actions">
+                    <div class="tablenav__button--light tablenav__button--checkall">
+                        <label for="input--checkall--bottom" class="input-box">
 									<input type="checkbox" name="check" class="input--check" id="input--checkall--bottom">Select
 									<span class="input--checkpseudo"><i class="fa fa-check" aria-hidden="true"></i></span>
 								</label>
-							</div>
-							<div class="tablenav__button--light tablenav__button--sort">
-								<i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
-								<select name="select" class="tablenav__sort">
+                    </div>
+                    <div class="tablenav__button--light tablenav__button--sort">
+                        <i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
+                        <select name="select" class="tablenav__sort">
 									<option value="value1">Sort</option>
 									<option value="value2">to top</option>
 									<option value="value3">3</option>
 								</select>
-							</div>
-							<!--add button-->
-							<div role="button" class="tablenav__button--add">
-								<i class="fa fa-plus" aria-hidden="true"></i>
-								<a href="blog-new.html">Create New Blog</a>
-							</div>
-							<!--table pagination-->
-						<div class="tablenav__pagination">
-							<p class="paginatiom__num">1-10 of 100 Blogs</p>
-							<button class="pagination__btn pagination__btn--prev disabled">
+                    </div>
+                    <!--add button-->
+                    <div role="button" class="tablenav__button--add">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <a href="blog-new.html">Create New Blog</a>
+                    </div>
+                    <!--table pagination-->
+                    <div class="tablenav__pagination">
+                        <p class="paginatiom__num">1-10 of 100 Blogs</p>
+                        <button class="pagination__btn pagination__btn--prev disabled">
 								<i class="fa fa-chevron-left" aria-hidden="true"></i>
 							</button>
-							<button class="pagination__btn pagination__btn--next">
+                        <button class="pagination__btn pagination__btn--next">
 								<i class="fa fa-chevron-right" aria-hidden="true"></i>
 							</button>
-						</div>
-					</div>
-					</div>
-				</form>
-			</div>
-		</main>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</main>
 
-				<!--FOOTER-->
+		<!--FOOTER-->
 		<footer class="footer">
 			<div class="container">
 				<ul class="footer__nav">    
